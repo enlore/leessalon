@@ -2,26 +2,48 @@ extends layouts/base
 block body
   .container
     .row
-      .col-sm-12
+      .col-sm-5
         h1 Our services
 
-        ul
-          li Women’s Basic Haircut – $20.00
-          li Women’s Cut &amp; Style – $35.00
-          li Men’s Basic Haircut – $15.00
-          li Military Men’s Haircut – $10.00
-          li Children’s Haircut (Under 12) – $10.00
-          li Foil Highlights – $75.00
-          li Partial Highlights – $45.00
-          li Color – $50.00
-          li Formal Styles &amp; Up-Do’s – $35.00
-          li Brow Wax – $12.00
-          li Keratin Straightening Treatment – $150.00
-          li Perm (Includes Haircut) – $65
-          li Makeup – $25
-          li Relaxer – $65
-          li Corrective Color – $95
-          li Japanese Straight Perm – $150
-          li Extensions – Consultation
-          li Keratin Repair Treatment – $35
-          li Prices May Vary Depending On Hair.
+        ul.media-list.services-list
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", false)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", true)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", false)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", true)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", false)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", true)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", false)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", true)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", false)
+          +service-item('//placehold.it/100x100',"Women's Basic Cut", "Shave and a hair cut, two pence", "$20", true)
+
+
+        mixin service-item(thumb, title, body, price, swing)
+          li.media 
+            a(class=swing ? "pull-right" : "pull-left")
+              img.media-object(src="#{thumb}")
+
+            p(class=swing ? "pull-left" : "pull-right").h1.media-heading.service-price= price
+
+            .media-body(class=swing ? "text-right" : "")
+              h3.media-heading= title
+              p= body
+
+        li Women’s Cut &amp; Style – $35.00
+        li Men’s Basic Haircut – $15.00
+        li Military Men’s Haircut – $10.00
+        li Children’s Haircut (Under 12) – $10.00
+        li Foil Highlights – $75.00
+        li Partial Highlights – $45.00
+        li Color – $50.00
+        li Formal Styles &amp; Up-Do’s – $35.00
+        li Brow Wax – $12.00
+        li Keratin Straightening Treatment – $150.00
+        li Perm (Includes Haircut) – $65
+        li Makeup – $25
+        li Relaxer – $65
+        li Corrective Color – $95
+        li Japanese Straight Perm – $150
+        li Extensions – Consultation
+        li Keratin Repair Treatment – $35
+        li Prices May Vary Depending On Hair.
