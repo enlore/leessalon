@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eyes Up, Forks Down</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="/css/vendor/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- modernizr-->
+    <!-- respond.js-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="links"><a href="//placehold.it/600x400&amp;text=Image" title="" data-gallery><img src="//placehold.it/300x200&amp;text=Thumb" alt=""></a><a href="//placehold.it/800x600&amp;text=Image" title="" data-gallery><img src="//placehold.it/300x200&amp;text=Thumb" alt=""></a><a href="//placehold.it/500x275&amp;text=Image" title="" data-gallery><img src="//placehold.it/300x200&amp;text=Thumb" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+    <div id="blueimp-gallery" class="blueimp-gallery">
+      <div class="slides"></div>
+      <h3 class="title"></h3><a class="prev">&lt; </a><a class="next">&gt; </a><a class="close">x</a><a class="play-pause">Play/Pause</a>
+      <ol class="indicator"></ol>
+      <div class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" aria-hidden="true" class="close">&times;</button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body next"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-defaul pull-left previous"><i class="glyphicon glyphicon-chevron-left"></i>Previous</button>
+              <button type="button" class="btn btn-defaul pull-right next">Next<i class="glyphicon glyphicon-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="/js/vendor/bootstrap-image-gallery.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

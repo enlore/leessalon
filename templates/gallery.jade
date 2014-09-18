@@ -1,0 +1,43 @@
+extends ../layouts/base
+block body
+  .container
+    .row
+      .col-sm-12
+        .links
+          a(href="//placehold.it/600x400&text=Image", title="", data-gallery)
+            img(src="//placehold.it/300x200&text=Thumb", alt="")
+
+          a(href="//placehold.it/800x600&text=Image", title="", data-gallery)
+            img(src="//placehold.it/300x200&text=Thumb", alt="")
+
+          a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+            img(src="//placehold.it/300x200&text=Thumb", alt="")
+
+  #blueimp-gallery.blueimp-gallery
+    .slides
+
+    h3.title
+    a.prev &lt; 
+    a.next &gt; 
+    a.close x
+    a.play-pause Play/Pause
+
+    ol.indicator
+
+    .modal.fade
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type="button", aria-hidden="true") &times;
+            h4.modal-title
+
+          .modal-body.next
+
+          .modal-footer
+            button.btn.btn-defaul.pull-left.previous(type="button") 
+              i.glyphicon.glyphicon-chevron-left 
+              | Previous
+
+            button.btn.btn-defaul.pull-right.next(type="button") 
+              | Next
+              i.glyphicon.glyphicon-chevron-right
