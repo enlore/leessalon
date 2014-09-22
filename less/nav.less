@@ -10,4 +10,16 @@
     }
 }
 
-.navbar-sitenav {}
+.navbar-sitenav {
+    .navbar-nav > li > a {
+        border-bottom: 1px solid grey;  
+        text-align: center;
+
+        &:hover,
+        &:active {
+            border-bottom: 1px solid @nav-active-color; 
+            color: @nav-active-color;
+        }
+    }
+
+}
