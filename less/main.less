@@ -22,6 +22,10 @@ ul {
     list-style: none;
 }
 
+section {
+    h1 { color: @blue; }
+}
+
 section, footer {
     padding-top: 4em;
     padding-bottom: 4em;
@@ -91,8 +95,12 @@ footer {
 }
 
 .our-services {
-    li {
-        background-color: @white; 
-        padding: 10px;
+    .services-list {
+        background-color: @white;
+        margin-top: 40px;
+
+        li {
+            padding: 10px;
+        }
     }
 }

@@ -6,8 +6,8 @@ block body
         .col-sm-12
           h1.text-center Our services
 
-      .row
-        ul.media-list.services-list
+      .row.services-list
+        ul.media-list
           .col-sm-6
             +service-item('//placehold.it/120x120',"Women's Basic Haircut", "", "$20", false)
             +service-item('//placehold.it/120x120',"Women's Cut & Style", "", "$35", true)
@@ -41,5 +41,3 @@ mixin service-item(thumb, title, body, price, swing)
     .media-body(class=swing ? "text-right" : "")
       h3.media-heading= title
       p= body
-
-  hr
