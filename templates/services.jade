@@ -1,33 +1,34 @@
 extends layouts/base
 block body
-  .container
-    .row
-      .col-sm-12
-        h1.text-center Our services
+  section.our-services
+    .container
+      .row
+        .col-sm-12
+          h1.text-center Our services
 
-    .row
-      ul.media-list.services-list
-        .col-sm-6
-          +service-item('//placehold.it/120x120',"Women's Basic Haircut", "", "$20", false)
-          +service-item('//placehold.it/120x120',"Women's Cut & Style", "", "$35", true)
-          +service-item('//placehold.it/120x120',"Men's Basic Haircut", "", "$15", false)
-          +service-item('//placehold.it/120x120',"Military Men's Haircut", "", "$10", true)
-          +service-item('//placehold.it/120x120',"Children's Haircut", "Under 12 only", "$10", false)
-          +service-item('//placehold.it/120x120',"Foil Highlights", "", "$75", true)
-          +service-item('//placehold.it/120x120',"Partial Highlights", "", "$45", false)
-          +service-item('//placehold.it/120x120',"Color", "", "$50", true)
-          +service-item('//placehold.it/120x120',"Keratin Repair Treatment", "", "$35", false)
+      .row
+        ul.media-list.services-list
+          .col-sm-6
+            +service-item('//placehold.it/120x120',"Women's Basic Haircut", "", "$20", false)
+            +service-item('//placehold.it/120x120',"Women's Cut & Style", "", "$35", true)
+            +service-item('//placehold.it/120x120',"Men's Basic Haircut", "", "$15", false)
+            +service-item('//placehold.it/120x120',"Military Men's Haircut", "", "$10", true)
+            +service-item('//placehold.it/120x120',"Children's Haircut", "Under 12 only", "$10", false)
+            +service-item('//placehold.it/120x120',"Foil Highlights", "", "$75", true)
+            +service-item('//placehold.it/120x120',"Partial Highlights", "", "$45", false)
+            +service-item('//placehold.it/120x120',"Color", "", "$50", true)
+            +service-item('//placehold.it/120x120',"Keratin Repair Treatment", "", "$35", false)
 
-        .col-sm-6   
-          +service-item('//placehold.it/120x120',"Formal Styles and Up-Do's", "", "$35", true)
-          +service-item('//placehold.it/120x120',"Brow Wax", "", "$12", false)
-          +service-item('//placehold.it/120x120',"Perm", "Includes haircut", "$65", true)
-          +service-item('//placehold.it/120x120',"Keratin Straightening Treatment", "", "$150", false)
-          +service-item('//placehold.it/120x120',"Relaxer", "", "$65", true)
-          +service-item('//placehold.it/120x120',"Makeup", "", "$25", false)
-          +service-item('//placehold.it/120x120',"Japanese Straight Perm", "", "$150", true)
-          +service-item('//placehold.it/120x120',"Corrective Color", "", "$95", false)
-          +service-item('//placehold.it/120x120',"Extensions", "By consultation, only.", "", true)
+          .col-sm-6   
+            +service-item('//placehold.it/120x120',"Formal Styles and Up-Do's", "", "$35", true)
+            +service-item('//placehold.it/120x120',"Brow Wax", "", "$12", false)
+            +service-item('//placehold.it/120x120',"Perm", "Includes haircut", "$65", true)
+            +service-item('//placehold.it/120x120',"Keratin Straightening Treatment", "", "$150", false)
+            +service-item('//placehold.it/120x120',"Relaxer", "", "$65", true)
+            +service-item('//placehold.it/120x120',"Makeup", "", "$25", false)
+            +service-item('//placehold.it/120x120',"Japanese Straight Perm", "", "$150", true)
+            +service-item('//placehold.it/120x120',"Corrective Color", "", "$95", false)
+            +service-item('//placehold.it/120x120',"Extensions", "By consultation, only.", "", true)
 
 
 mixin service-item(thumb, title, body, price, swing)

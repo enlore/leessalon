@@ -1,68 +1,73 @@
 extends layouts/base
 block body
-  .container
-    .row
-      .col-sm-12
-        .gallery-thumbs
-          .links
-            a(href="//placehold.it/600x400&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+  section.gallery
+    .container
+      .row
+        .col-sm-12
+          h1 Check out a selection of our work!
 
-            a(href="//placehold.it/800x600&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+      .row
+        .col-sm-12
+          .gallery-thumbs
+            .links
+              a(href="//placehold.it/600x400&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/800x600&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-            a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
-              img(src="//placehold.it/300x200&text=Thumb", alt="")
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-  #blueimp-gallery.blueimp-gallery
-    .slides
+              a(href="//placehold.it/500x275&text=Image", title="", data-gallery)
+                img.col-sm-3(src="//placehold.it/300x200&text=Thumb", alt="")
 
-    h3.title
-    a.prev &lt; 
-    a.next &gt; 
-    a.close x
-    a.play-pause Play/Pause
+    #blueimp-gallery.blueimp-gallery
+      .slides
 
-    ol.indicator
+      h3.title
+      a.prev &lt; 
+      a.next &gt; 
+      a.close x
+      a.play-pause Play/Pause
 
-    .modal.fade
-      .modal-dialog
-        .modal-content
-          .modal-header
-            button.close(type="button", aria-hidden="true") &times;
-            h4.modal-title
+      ol.indicator
 
-          .modal-body.next
+      .modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type="button", aria-hidden="true") &times;
+              h4.modal-title
 
-          .modal-footer
-            button.btn.btn-defaul.pull-left.previous(type="button") 
-              i.glyphicon.glyphicon-chevron-left 
-              | Previous
+            .modal-body.next
 
-            button.btn.btn-defaul.pull-right.next(type="button") 
-              | Next
-              i.glyphicon.glyphicon-chevron-right
+            .modal-footer
+              button.btn.btn-defaul.pull-left.previous(type="button") 
+                i.glyphicon.glyphicon-chevron-left 
+                | Previous
+
+              button.btn.btn-defaul.pull-right.next(type="button") 
+                | Next
+                i.glyphicon.glyphicon-chevron-right
