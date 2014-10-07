@@ -1,3 +1,3 @@
 jade -o public -p templates/includes -P templates
-stylus -o public/css styl/main.styl
+stylus -I styl < styl/main.styl > public/css/main.css
 rsync -av assets/ public/
