@@ -1,7 +1,30 @@
+$navbar-bg-alpha = rgba(248, 248, 248, 0.7)
+$black = #000
+$phone-nav-border = $black
+
+.navbar-sitenav
+    margin-bottom 0
+    border-radius 0
+    border none
+
+    background-color $navbar-bg-alpha
+
+    .navbar-nav > li > a
+        //border-bottom 1px solid grey
+        text-align center
+
+        &hover,
+        &active
+            border-bottom 1px solid $nav-active-color
+            color $nav-active-color
+
 .phone-navbar
     margin-top 50px
     a
         font-size 30px
+
+    background-color $navbar-bg-alpha
+    border-bottom 1px solid $phone-nav-border
 
 .navbar-social
     margin-top 100px
@@ -9,6 +32,7 @@
     text-align center
     border-bottom none
     border-radius 0
+
 
     ul.nav.navbar-nav
         display inline-block
@@ -18,15 +42,3 @@
             float left
             display inline
 
-.navbar-sitenav
-    margin-bottom 0
-    border-radius 0
-
-    .navbar-nav > li > a
-        border-bottom 1px solid grey
-        text-align center
-
-        &hover,
-        &active
-            border-bottom 1px solid $nav-active-color
-            color $nav-active-color
