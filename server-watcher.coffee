@@ -9,7 +9,7 @@ path        = require 'path'
 nodemon
     script: 'compile.sh'
     exec: 'zsh'
-    ignore: 'public'
+    ignore: 'public crap'
     ext: 'coffee styl jade sh jpg jpeg gif png'
 
 app.use express.static path.join __dirname, 'public'
