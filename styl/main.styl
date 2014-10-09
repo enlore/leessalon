@@ -22,16 +22,24 @@ footer
     background-color $white
 
 $intro-border = $black
+$intro-shadow = $black
 
 .intro
     background-color $white
     border-top 1px solid $intro-border
     border-bottom 1px solid $intro-border
 
-    box-shadow inset 0px 4px 2px -2px $black,
-        inset 0px -4px 2px -2px $black
+    box-shadow inset 0px 4px 2px -2px $intro-shadow,
+        inset 0px -4px 2px -2px $intro-shadow
+
+    overflow hidden
+
+    .copy
+        z-index 2
 
     .accredations
+        z-index 1
+        position relative
         img
             margin-top 3em
 
