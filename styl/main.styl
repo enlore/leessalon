@@ -36,29 +36,58 @@ $intro-border = $black
                 margin-top 0
 
 .service-boxes
-    li a
-        display block
-        margin 1em auto
-        position relative
+    li
+        h3
+            background $black
+            color $white
+
+        a
+            display block
+            margin 1em auto
+            position relative
 
 
-        $url = url('//placehold.it/225x225')
-        $dimension = 225px
+            $url = url('//placehold.it/225x225')
+            $dimension = 225px
 
-        background-image $url
-        height $dimension
-        width $dimension
-
-        @media screen and (min-width: $tablet)
-            $url = url('//placehold.it/300x300')
-            $dimension = 300px
-
-            background-image $url
             height $dimension
             width $dimension
 
-        span
-            bottom 20px
-            width 100%
-            text-align center
-            position absolute
+            @media screen and (min-width: $tablet)
+                $url = url('//placehold.it/300x300')
+                $dimension = 300px
+
+                background-image $url
+                height $dimension
+                width $dimension
+
+            span
+                bottom 20px
+                width 100%
+                text-align center
+                position absolute
+
+        a.services
+            background-image url('/img/services_sheet.png')
+            background-position 0px -226px
+            background-repeat no-repeat
+            &:hover,
+            &:active
+                background-position 0px -754px
+
+        a.gallery
+            background-image url('/img/services_sheet.png')
+            background-position -300px -226px
+            background-repeat no-repeat
+            &:hover,
+            &:active
+                background-position -300px -754px
+
+        a.team
+            background-image url('/img/services_sheet.png')
+            background-position -603px -226px
+            background-repeat no-repeat
+            &:hover,
+            &:active
+                background-position -603px -754px
+
