@@ -5,6 +5,8 @@ $large = 1200px
 $black = #222
 $white = #F8F8F8
 
+$white-alpha = rgba(248, 248, 248, 0.7)
+
 $blue = #00fffa
 $nav-active-color = $blue
 
@@ -29,8 +31,21 @@ $intro-shadow = $black
 
 .intro
     background-color $white
+    background-image url('/img/intro_bg.jpg')
     border-top 1px solid $intro-border
     border-bottom 1px solid $intro-border
+
+    .lead-copy
+        padding 1em
+        border-radius 10px
+        text-align center
+        background-color $white
+        background-color $white-alpha
+
+        p.lead
+            font-size 26px
+        p
+            font-size 20px
 
     box-shadow inset 0px 4px 2px -2px $intro-shadow,
         inset 0px -4px 2px -2px $intro-shadow
