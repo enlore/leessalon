@@ -20,14 +20,17 @@ html
 
   body
     include ../includes/nav
-    block body
-    include ../includes/footer
 
-    script(type="text/javascript", src="/js/vendor/jquery-2.1.1.min.js")
-    script(type="text/javascript", src="/js/vendor/bootstrap.min.js")
-    script(type="text/javascript", src="/js/vendor/jquery.blueimp-gallery.min.js")
-    script(type="text/javascript", src="/js/vendor/bootstrap-image-gallery.min.js")
-    script(src="/js/vendor/skrollr.min.js", type="text/javascript")
-    script(type="text/javascript").
-      var s = skrollr.init({forceHeight: false})
-    script(src="/js/main.js")
+    #skrollr-body
+      include ../includes/social-nav
+      block body
+      include ../includes/footer
+
+      script(type="text/javascript", src="/js/vendor/jquery-2.1.1.min.js")
+      script(type="text/javascript", src="/js/vendor/bootstrap.min.js")
+      script(type="text/javascript", src="/js/vendor/jquery.blueimp-gallery.min.js")
+      script(type="text/javascript", src="/js/vendor/bootstrap-image-gallery.min.js")
+      script(src="/js/vendor/skrollr.min.js", type="text/javascript")
+      script(type="text/javascript").
+        var s = skrollr.init({forceHeight: false})
+      script(src="/js/main.js")
