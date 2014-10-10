@@ -83,25 +83,39 @@ $intro-shadow = $black
 
         a.services
             background-image url('/img/services_sheet.png')
-            background-position 0px -226px
             background-repeat no-repeat
-            &:hover,
-            &:active
-                background-position 0px -754px
+
+            background-position 0px -526px
+    
+            @media screen and (min-width: $tablet)
+                background-position 0px -226px
+                &:hover,
+                &:active
+                    background-position 0px -754px
 
         a.gallery
             background-image url('/img/services_sheet.png')
-            background-position -300px -226px
             background-repeat no-repeat
-            &:hover,
-            &:active
-                background-position -300px -754px
+
+            background-position -225px -526px
+
+            @media screen and (min-width: $tablet)
+                background-position -300px -226px
+
+                &:hover,
+                &:active
+                    background-position -300px -754px
 
         a.team
             background-image url('/img/services_sheet.png')
-            background-position -602px -226px
             background-repeat no-repeat
-            &:hover,
-            &:active
-                background-position -602px -754px
+
+            background-position -451px -526px
+
+            @media screen and (min-width: $tablet)
+                background-position -602px -226px
+
+                &:hover,
+                &:active
+                    background-position -602px -754px
 
