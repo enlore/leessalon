@@ -15,8 +15,11 @@ $nav-active-color = $blue
 
 body
     background-image url('/img/bg.jpg')
-    background-position center center
+    background-position 0px -600px
     background-attachment fixed
+
+    @media screen and (min-width: $tablet)
+        background-position center center
 
 footer
     background-color $white
