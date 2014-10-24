@@ -10,7 +10,7 @@ nodemon
     script: 'compile.sh'
     exec: 'zsh'
     ignore: 'public crap'
-    ext: 'coffee styl jade sh jpg jpeg gif png'
+    ext: 'coffee styl jade sh jpg jpeg gif png svg'
 
 app.use express.static path.join __dirname, 'public'
 
