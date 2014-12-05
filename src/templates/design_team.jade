@@ -1,0 +1,75 @@
+mixin gallery-image(src, thumb)
+  a(href=thumb, data-gallery)
+    img.thumb.img-responsive(src=src)
+
+extends layouts/base
+block body
+  section.design-team
+    .container
+      .row
+        .col-sm-12.text-center
+          h1 Meet Our Design Team
+
+      .gallery
+        .links
+          .row
+            .col-xs-6.col-sm-3.col-sm-offset-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_11.jpg", "/img/headshots/headshot_600x900_11.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_0.jpg", "/img/headshots/headshot_600x900_0.jpg")
+
+          .row
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_1.jpg", "/img/headshots/headshot_600x900_1.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_2.jpg", "/img/headshots/headshot_600x900_2.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_3.jpg", "/img/headshots/headshot_600x900_3.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_4.jpg", "/img/headshots/headshot_600x900_4.jpg")
+
+          .row
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_5.jpg", "/img/headshots/headshot_600x900_5.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_6.jpg", "/img/headshots/headshot_600x900_6.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_7.jpg", "/img/headshots/headshot_600x900_7.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_8.jpg", "/img/headshots/headshot_600x900_8.jpg")
+          .row
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_9.jpg", "/img/headshots/headshot_600x900_9.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_10.jpg", "/img/headshots/headshot_600x900_10.jpg")
+            .col-xs-6.col-sm-3
+              +gallery-image("/img/headshots/thumbs/headshot_200x300_12.jpg", "/img/headshots/headshot_600x900_12.jpg")
+
+    #blueimp-gallery.blueimp-gallery
+      .slides
+
+      h3.title
+      a.prev &lt;
+      a.next &gt;
+      a.close x
+      a.play-pause Play/Pause
+
+      ol.indicator
+
+      .modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type="button", aria-hidden="true") &times;
+              h4.modal-title
+
+            .modal-body.next
+
+            .modal-footer
+              button.btn.btn-defaul.pull-left.previous(type="button")
+                i.glyphicon.glyphicon-chevron-left
+                | Previous
+
+              button.btn.btn-defaul.pull-right.next(type="button")
+                | Next
+                i.glyphicon.glyphicon-chevron-right

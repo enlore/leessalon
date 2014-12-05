@@ -1,0 +1,23 @@
+{
+  "name": "leessalon.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/enlore/leessalon",
+  "authors": [
+    "enlore <n.e.lorenson@gmail.com>"
+  ],
+  "description": "client work",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "skrollr": "~0.6.29",
+    "blueimp-bootstrap-image-gallery": "~3.1.1"
+  }
+}

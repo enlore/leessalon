@@ -2,3 +2,4 @@ dev.sh
 node_modules
 public/*
 crap
+bower_components

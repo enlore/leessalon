@@ -3,4 +3,4 @@ if [ $# -ne 1 ]; then
     exit 1
 fi;
 
-rsync -rvz public $1:/var/www/lee.elcreativegroup.com
+scp -vr dist/public $1:/var/www/lee.elcreativegroup.com

@@ -1,0 +1,73 @@
+extends layouts/base
+block body
+  section.gallery
+    .container
+      .row
+        .col-sm-12
+          h1 Check out a selection of our work!
+
+      .row
+        .col-sm-12
+          .gallery-thumbs
+            .links
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+              a(href="//unsplash.it/500/275", data-gallery)
+                img.col-sm-3(src="//unsplash.it/300/200")
+
+    #blueimp-gallery.blueimp-gallery
+      .slides
+
+      h3.title
+      a.prev &lt; 
+      a.next &gt; 
+      a.close x
+      a.play-pause Play/Pause
+
+      ol.indicator
+
+      .modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type="button", aria-hidden="true") &times;
+              h4.modal-title
+
+            .modal-body.next
+
+            .modal-footer
+              button.btn.btn-defaul.pull-left.previous(type="button") 
+                i.glyphicon.glyphicon-chevron-left 
+                | Previous
+
+              button.btn.btn-defaul.pull-right.next(type="button") 
+                | Next
+                i.glyphicon.glyphicon-chevron-right

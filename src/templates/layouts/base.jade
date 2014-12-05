@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Lee's Salon - Men and Women's Salon - Military Friendly
+
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="Men and women's haircuts, color, perms, military, up-do's, children, and more.")
+
+    link(rel="stylesheet", href="/css/vendor/deps.css")
+    link(href='//fonts.googleapis.com/css?family=Kreon|Oxygen:300,400', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="/css/main.css")
+
+
+    // modernizr
+    // respond.js
+
+  body
+    include ../includes/nav
+
+    #skrollr-body
+      include ../includes/social-nav
+      block body
+      include ../includes/footer
+
+      script(type="text/javascript", src="/js/vendor/deps.js")
+      script(src="/js/main.js")
