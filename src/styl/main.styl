@@ -3,6 +3,7 @@ $medium = 992px
 $large = 1200px
 
 $black = #222
+
 $white = #F8F8F8
 
 $white-alpha = rgba(248, 248, 248, 0.7)
@@ -10,12 +11,16 @@ $white-alpha = rgba(248, 248, 248, 0.7)
 $blue = #00fffa
 $nav-active-color = $blue
 
+$gold = #F6EB14
+$btn-call-color = $gold
+
+@import 'fonts'
 @import 'components'
 @import 'util'
 @import 'header'
 @import 'nav'
-@import 'fonts'
 @import 'gallery'
+@import 'services'
 
 body
     background-image url('/img/bg.jpg')
@@ -52,10 +57,13 @@ $intro-shadow = $black
     img
         margin-top 3em
 
-        @media screen and (min-width: @tablet)
+        @media screen and (min-width: $tablet)
             margin-top 0
 
-.intro
+    .row
+        margin-bottom 2em
+
+.services
     background-color $white
     background-image url('/img/hair_swatches.jpg')
     border-top 1px solid $intro-border
@@ -72,24 +80,19 @@ $intro-shadow = $black
 
 .service-boxes
     li
-        h3
-            background $black
-            color $white
-
         a
             display block
             margin 1em auto
             position relative
             box-shadow 0px 10px 1px -5px $black
+            background-repeat no-repeat
 
-            $url = url('//placehold.it/225x225')
             $dimension = 225px
 
             height $dimension
             width $dimension
 
             @media screen and (min-width: $tablet)
-                $url = url('//placehold.it/300x300')
                 $dimension = 300px
 
                 background-image $url
@@ -104,10 +107,9 @@ $intro-shadow = $black
 
         a.services
             background-image url('/img/services_sheet.png')
-            background-repeat no-repeat
 
             background-position 0px -526px
-    
+
             @media screen and (min-width: $tablet)
                 background-position 0px -226px
                 &:hover,
@@ -115,9 +117,7 @@ $intro-shadow = $black
                     background-position 0px -754px
 
         a.gallery
-
             background-image url('/img/services_sheet.png')
-            background-repeat no-repeat
 
             background-position -225px -526px
 
@@ -130,7 +130,6 @@ $intro-shadow = $black
 
         a.team
             background-image url('/img/services_sheet.png')
-            background-repeat no-repeat
 
             background-position -451px -526px
 
@@ -140,5 +139,3 @@ $intro-shadow = $black
                 &:hover,
                 &:active
                     background-position -602px -754px
-
-

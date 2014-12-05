@@ -24,7 +24,7 @@ app.get "/our-services", (req, res) ->
     res.sendFile "services.html", sendFileOptions
 
 app.get "/contact", (req, res) ->
-    res.senfFile "contact.html", sendFileOptions
+    res.sendFile "contact.html", sendFileOptions
 
 app.listen PORT, ->
     console.log "~~~~~> Listening on " + PORT

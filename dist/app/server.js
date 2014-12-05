@@ -32,7 +32,7 @@
   });
 
   app.get("/contact", function(req, res) {
-    return res.senfFile("contact.html", sendFileOptions);
+    return res.sendFile("contact.html", sendFileOptions);
   });
 
   app.listen(PORT, function() {
