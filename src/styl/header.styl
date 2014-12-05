@@ -8,6 +8,33 @@ header
         display inline-block
         border 1px solid $black
         padding 1em
+        position relative
+
+        address
+            color $white
+            p
+                kreon()
+                font-size 24px
+
+        .message
+            position absolute
+            background-color $black-alpha
+            padding-left 1em
+            padding-right 1em
+            bottom 10%
+            left 1em
+            padding-top 1em
+            box-shadow 6px 0 4px 4px $black-alpha
+
+            hr
+                border-color black
+                border-width 2px
+                width 50%
+
+            img
+                width 400px
+                margin-left auto
+                margin-right auto
 
     address
         font-size 22px

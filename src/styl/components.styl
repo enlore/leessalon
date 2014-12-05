@@ -18,8 +18,12 @@ section, footer
     oxygen-heavy()
     background-color $btn-call-color
     color $black
+    box-shadow 4px 4px 0 0px darken($gold, 25%)
+    position relative
     &:hover, &:active
-        box-shadow 4px 4px 0 0px darken($gold, 25%)
+        box-shadow none
+        right -4px
+        bottom -4px
 
 .btn-lg
     font-size 36px
