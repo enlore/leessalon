@@ -31,7 +31,14 @@ block body
                   +service-item("Makeup", "", "$25", false)
                   +service-item("Japanese Straight Perm", "", "$150", true)
                   +service-item("Corrective Color", "", "$95", false)
-                  +service-item("Extensions", "By consultation, only.", "", true)
+                  li.service-item
+                    p Extensions
+                    p.sub By consultation only
+
+            .footer.row
+              .col-sm-12.text-center
+                p Prices may vary depending on hair
+
 
 
 mixin service-item(title, body, price)
