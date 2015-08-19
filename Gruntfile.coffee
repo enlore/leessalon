@@ -35,9 +35,9 @@ module.exports = (grunt) ->
             compile:
                 files:
                     "dist/public/index.html": ["src/templates/index.jade"]
-                    "dist/public/design_team.html": ["src/templates/design_team.jade"]
-                    "dist/public/services.html": ["src/templates/services.jade"]
-                    "dist/public/gallery.html": ["src/templates/gallery.jade"]
+                    "dist/public/design-team/index.html": ["src/templates/design-team/index.jade"]
+                    "dist/public/services/index.html": ["src/templates/services/index.jade"]
+                    "dist/public/gallery/index.html": ["src/templates/gallery/index.jade"]
 
         bower_concat:
             compile:
